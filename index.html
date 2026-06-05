@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-top">
+                <h1>Our Menu</h1>
+                <div class="cart-icon" id="cart-toggle">
+                    🛒 <span id="cart-count" class="badge">0</span>
+                </div>
+            </div>
+            <nav class="categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="pizzas">Pizzas</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </nav>
+        </header>
+
+        <main class="menu-list" id="menu-list">
+            </main>
+
+        <div class="cart-modal" id="cart-modal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h2>Your Order</h2>
+                    <button id="close-cart" class="close-btn">&times;</button>
+                </div>
+                <div id="cart-items" class="cart-items">
+                    </div>
+                <div class="cart-footer">
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
